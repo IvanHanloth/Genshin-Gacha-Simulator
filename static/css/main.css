@@ -1,0 +1,151 @@
+#gacha-num-1 {
+    width: 4em;
+    font-size: 30px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #d7d7d7;
+    margin-bottom: 10px;
+}
+
+.gacha-num::after {
+    content: "次";
+    position: relative;
+    font-size: 19px;
+    bottom: -5px;
+}
+
+.gacha-num::before {
+    content: "抽";
+    position: relative;
+    font-size: 19px;
+    bottom: -5px;
+}
+
+.res-box {
+    height: 200px;
+    cursor: pointer;
+}
+
+.res-box:hover {
+    position: relative;
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.res-title {
+    margin: 0px 20px;
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+.res-num {
+    margin: 0px 20px;
+    font-size: 45px;
+}
+
+#turn-num::after {
+    content: "轮";
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.posibility-purple {
+    background-color: #9890ff;
+    top: 0px;
+    width: 5.1%;
+    height: 100%;
+    display: inline-block;
+
+}
+
+.posibility-blue {
+    background-color: #92ceff;
+    top: 0px;
+    width: 94.3%;
+    height: 100%;
+    display: inline-block;
+}
+
+.posibility-gold {
+    background-color: #ffe92f;
+    top: 0px;
+    width: 0.6%;
+    height: 100%;
+    display: inline-block;
+}
+
+.posibility-range {
+    height: 60px;
+    width: calc(100% - 10px);
+    position: relative;
+    margin: 50px 5px;
+}
+
+.posibility-range::before {
+    content: "1";
+    font-size: 15px;
+    position: absolute;
+    left: -0.5ex;
+    bottom: -2ex;
+}
+
+.posibility-range::after {
+    content: "1000";
+    font-size: 15px;
+    position: absolute;
+    bottom: -2ex;
+    right: -2ex;
+}
+
+.posibility-cursor {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: #000;
+    width: 2px;
+    left: calc(0.1% - 1px);
+}
+
+.posibility-cursor::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -5px;
+    border-top: 12px solid #000;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    height: 0px;
+    width: 0px;
+}
+
+.posibility-cursor::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: -5px;
+    border-bottom: 12px solid #000;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    height: 0px;
+    width: 0px;
+}
+
+.posibility-show {
+    position: absolute;
+    top: calc(-22px - 1ex);
+    left: -15px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.posibility-res {
+    position: absolute;
+    bottom: calc(-22px - 1ex);
+    left: -15px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+}
